@@ -13,5 +13,6 @@ RUN mkdir /home/kevin/.ssh
 RUN mkdir /home/kevin/server-config
 RUN chmod 600 /home/kevin/.ssh
 RUN chown -R kevin:kevin /home/kevin
+RUN yum -y install vim
 VOLUME [ "/home/kevin/.ssh" , "/home/kevin/server-config" ]
 CMD []
